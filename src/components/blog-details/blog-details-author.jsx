@@ -18,7 +18,7 @@ const BlogDetailsAuthor = () => {
       <div className="tp-postbox-details-author-content">
         <span>Written by</span>
         <h5 className="tp-postbox-details-author-title">
-          <a href="#">Theodore Handle</a>
+          <a href="#">Sanjeev Shrestha</a>
         </h5>
         <p>
           By defining and following internal and external processes, your team

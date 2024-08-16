@@ -153,7 +153,7 @@ const useCheckoutSubmit = () => {
 
     if (total < result[0]?.minimumAmount) {
       notifyError(
-        `Minimum ${result[0].minimumAmount} USD required for Apply this coupon!`
+        `Minimum ${result[0].minimumAmount} USD$ required for Apply this coupon!`
       );
       return;
     } else {

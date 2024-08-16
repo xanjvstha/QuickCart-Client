@@ -20,9 +20,9 @@ const social_data = [
   },
   {
     id:4,
-    link:'https://vimeo.com/',
-    icon:'fa-brands fa-vimeo-v',
-    title:'Vimeo'
+    link:'https://youtube.com/',
+    icon:'fa-brands fa-youtube',
+    title:'Youtube'
   },
 ]
 

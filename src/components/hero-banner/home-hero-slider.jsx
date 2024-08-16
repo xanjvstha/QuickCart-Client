@@ -1,6 +1,6 @@
 // external
 import React, { useState } from "react";
-import { Navigation, Pagination, EffectFade } from "swiper";
+import { Navigation, Pagination, EffectFade, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,6 +8,8 @@ import Link from "next/link";
 import slider_img_1 from "@assets/img/slider/slider-img-1.png";
 import slider_img_2 from "@assets/img/slider/slider-img-2.png";
 import slider_img_3 from "@assets/img/slider/slider-img-3.png";
+import slider_img_4 from "@assets/img/slider/slider-img-4.png";
+import slider_img_5 from "@assets/img/slider/slider-img-5.png";
 import shape_1 from "@assets/img/slider/shape/slider-shape-1.png";
 import shape_2 from "@assets/img/slider/shape/slider-shape-2.png";
 import shape_3 from "@assets/img/slider/shape/slider-shape-3.png";
@@ -19,37 +21,61 @@ const sliderData = [
   {
     id: 1,
     pre_title: { text: "Starting at", price: 274 },
-    title: "The best tablet Collection 2023",
+    title: "The best Apple Watch Collection 2024",
     subtitle: {
       text_1: "Exclusive offer ",
       percent: 35,
       text_2: "off this week",
     },
     img: slider_img_1,
-    green_bg: true,
+    is_light: true,
   },
   {
     id: 2,
-    pre_title: { text: "Starting at", price: 999 },
-    title: "The best note book collection 2023",
+    pre_title: { text: "Starting at", price: 1999 },
+    title: "The best MacBook collection 2024",
     subtitle: {
       text_1: "Exclusive offer ",
       percent: 10,
       text_2: "off this week",
     },
     img: slider_img_2,
-    green_bg: true,
+    is_light: true,
   },
   {
     id: 3,
     pre_title: { text: "Starting at", price: 999 },
-    title: "The best note book collection 2023",
+    title: "The best iPad collection 2024",
     subtitle: {
       text_1: "Exclusive offer ",
       percent: 10,
       text_2: "off this week",
     },
     img: slider_img_3,
+    is_light: true,
+  },
+  {
+    id: 4,
+    pre_title: { text: "Starting at", price: 399 },
+    title: "The best Samsung collection 2024",
+    subtitle: {
+      text_1: "Exclusive offer ",
+      percent: 10,
+      text_2: "off this week",
+    },
+    img: slider_img_4,
+    is_light: true,
+  },
+  {
+    id: 5,
+    pre_title: { text: "Starting at", price: 1399 },
+    title: "The best iPhone collection 2024",
+    subtitle: {
+      text_1: "Exclusive offer ",
+      percent: 10,
+      text_2: "off this week",
+    },
+    img: slider_img_5,
     is_light: true,
   },
 ];
@@ -61,32 +87,36 @@ function Shape({ img, num }) {
 }
 
 const HomeHeroSlider = () => {
-  const [active,setActive] = useState(false);
+  const [active, setActive] = useState(false);
 
   // handleActiveIndex
   const handleActiveIndex = (index) => {
-    if(index === 2){
-      setActive(true)
+    if (index === 2) {
+      setActive(true);
+    } else {
+      setActive(false);
     }
-    else {
-      setActive(false)
-    }
-  }
+  };
+
   return (
     <>
       <section className="tp-slider-area p-relative z-index-1">
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
-          loop={false}
+          loop={true}
           effect="fade"
+          autoplay={{
+            delay: 5000, // 5 seconds delay between slides
+            disableOnInteraction: false, // keep autoplay running even after user interaction
+          }}
           navigation={{
             nextEl: ".tp-slider-button-next",
             prevEl: ".tp-slider-button-prev",
           }}
           onSlideChange={(swiper) => handleActiveIndex(swiper.activeIndex)}
           pagination={{ el: ".tp-slider-dot", clickable: true }}
-          modules={[Navigation, Pagination, EffectFade]}
+          modules={[Navigation, Pagination, EffectFade, Autoplay]}
           className={`tp-slider-active tp-slider-variation swiper-container ${
             active ? "is-light" : ""
           }`}
@@ -114,7 +144,7 @@ const HomeHeroSlider = () => {
                   <div className="col-xl-5 col-lg-6 col-md-6">
                     <div className="tp-slider-content p-relative z-index-1">
                       <span>
-                        {item.pre_title.text} <b>${item.pre_title.text}</b>
+                        {item.pre_title.text} <b>${item.pre_title.price}</b>
                       </span>
                       <h3 className="tp-slider-title">{item.title}</h3>
                       <p>

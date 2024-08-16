@@ -15,17 +15,6 @@ function Language({active,handleActive}) {
       >
         English
       </span>
-      <ul className={active === 'lang' ? "tp-lang-list-open" : ""}>
-        <li>
-          <a href="#">Spanish</a>
-        </li>
-        <li>
-          <a href="#">Russian</a>
-        </li>
-        <li>
-          <a href="#">Portuguese</a>
-        </li>
-      </ul>
     </div>
   );
 }
@@ -39,22 +28,8 @@ function Currency({active,handleActive}) {
         className="tp-header-currency-toggle"
         id="tp-header-currency-toggle"
       >
-        USD
+        USD$
       </span>
-      <ul className={active === 'currency' ? "tp-currency-list-open" : ""}>
-        <li>
-          <a href="#">EUR</a>
-        </li>
-        <li>
-          <a href="#">CHF</a>
-        </li>
-        <li>
-          <a href="#">GBP</a>
-        </li>
-        <li>
-          <a href="#">KWD</a>
-        </li>
-      </ul>
     </div>
   );
 }

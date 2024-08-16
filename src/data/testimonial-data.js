@@ -10,7 +10,7 @@ export const fashion_testi_data = [
     review:4,
     desc:'“ How you use the city or town name is up to you. All results may be freely used in any work.”',
     user:user_2,
-    name:'Theodore Handle',
+    name:'Sayara Shrestha',
     designation:'CO Founder'
   },
   {
@@ -18,7 +18,7 @@ export const fashion_testi_data = [
     review:5,
     desc:'“Very happy with our choice to take our daughter to Brave care. The entire team was great! Thank you!”',
     user:user_3,
-    name:'John Smith',
+    name:'Ramila Nayaju',
     designation:'UI/UX Designer'
   },
   {
@@ -26,7 +26,7 @@ export const fashion_testi_data = [
     review:3,
     desc:'“Thanks for all your efforts and teamwork over the last several months!  Thank you so much”',
     user:user_4,
-    name:'Salim Rana',
+    name:'Sanjeev Shrestha',
     designation:'Web Developer'
   },
 ]
@@ -38,7 +38,7 @@ export const beauty_testi_data = [
     review:4,
     desc:'Suscipit tellus mauris a diam maecenas. Ut faucibus pulvinar elementum integer enim neque volutpat ac. Auctor urna nunc id cursus. Scelerisque purus semper eget duis at. Pharetra vel turpis nunc eget.',
     user:user_1,
-    name:'Jake Weary',
+    name:'Ruchit Shrestha',
     designation:'CO Founder'
   },
   {
@@ -46,7 +46,7 @@ export const beauty_testi_data = [
     review:3.5,
     desc:'Suscipit tellus mauris a diam maecenas. Ut faucibus pulvinar elementum integer enim neque volutpat ac. Auctor urna nunc id cursus. Scelerisque purus semper eget duis at. Pharetra vel turpis nunc eget.',
     user:user_2,
-    name:'Salim Rana',
+    name:'Sayara Shrestha',
     designation:'Web Developer'
   },
   {
@@ -54,7 +54,7 @@ export const beauty_testi_data = [
     review:5,
     desc:'Suscipit tellus mauris a diam maecenas. Ut faucibus pulvinar elementum integer enim neque volutpat ac. Auctor urna nunc id cursus. Scelerisque purus semper eget duis at. Pharetra vel turpis nunc eget.',
     user:user_3,
-    name:'Selina Gomz',
+    name:'Ramila Nayaju',
     designation:'CO Founder'
   },
 ]

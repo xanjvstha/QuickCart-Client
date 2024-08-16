@@ -89,7 +89,7 @@ const JewelryBanner = () => {
                 <div className={`tp-slider-video transition-3 ${play?'full-width':''}`}>
 
                   <video loop>
-                    <source type="video/mp4" src="http://weblearnbd.net/tphtml/videos/shofy/jewellery-1.mp4#t=3" />
+                    <source type="video/mp4" src="#" />
                   </video>
                 </div>
                 {/* <!-- video button --> */}
